@@ -1,0 +1,6 @@
+*.cpython-310
+*.pyc
+**/__pycache__
+**/migrations
+*.sqlite3
+**/videos
