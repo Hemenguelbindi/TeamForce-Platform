@@ -196,6 +196,8 @@ header {
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
+
+  background: #fff;
 }
 .userfull ul {
   display: flex;
@@ -218,6 +220,83 @@ header {
 .userfull__login a {
   padding: 3px 39px;
 }
+/*HAMBURGER*/
+.hamburger {
+  display: none;
+}
+.hamburger__btn {
+  width: 30px;
+  height: 30px;
+
+  position: fixed;
+  top: 14px;
+  right: 10px;
+
+  cursor: pointer;
+  background: transparent;
+}
+.hamburger__btn span {
+  display: block;
+  width: 30px;
+  height: 3px;
+
+  position: relative;
+
+  background: #c4c4c4;
+}
+.hamburger__btn span:before,
+.hamburger__btn span:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+
+  position: absolute;
+  left: 0;
+
+  background: #c4c4c4;
+}
+.hamburger__btn span:before {
+  top: -10px;
+}
+.hamburger__btn span:after {
+  bottom: -10px;
+}
+.hamburger__menu {
+  width: 100vw;
+  padding: 15px;
+
+  position: fixed;
+  left: 0;
+  top: -20%;
+  z-index: -1;
+
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+  font-size: 18px;
+
+  transition: opacity 0.3s linear, top 0.5s linear;
+}
+.hamburger__link {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  text-align: center;
+}
+.hamburger__link a {
+  color: #000;
+}
+.hamburger__link:last-child {
+  margin-bottom: 0;
+}
+.hamburger.active .hamburger__menu {
+  top: 54px;
+
+  opacity: 1;
+}
+/*HAMBURGER*/
 /*HEADER*/
 
 
@@ -247,7 +326,76 @@ header {
 footer {
   min-height: 100px;
   width: 100%;
+  margin-top: 20px;
 
   box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 /*FOOTER*/
+
+
+@media(max-width: 1024px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 45px;
+  }
+
+  .main {
+    margin-top: 85px
+  }
+
+  .header__inner {
+    min-height: 75px;
+  }
+  .userfull a {
+    font-size: 22px;
+  }
+
+  .intro_text {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+  }
+
+  .form input {
+    height: 35px;
+
+    font-size: 14px;
+  }
+  .form input::placeholder {
+    font-size: 14px
+  }
+  .form__btn {
+    font-size: 14px
+  }
+}
+
+@media(max-width: 426px) {
+  .logo {
+    font-size: 35px;
+  }
+
+  .header__inner {
+    min-height: 55px;
+  }
+  .userfull {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media(max-width: 426px) {
+  .intro_text {
+    font-size: 24px
+  }
+}
