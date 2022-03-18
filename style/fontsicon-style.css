@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vx6x8s');
+  src:  url('../fonts/icomoon.eot?vx6x8s#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vx6x8s') format('truetype'),
+    url('../fonts/icomoon.woff?vx6x8s') format('woff'),
+    url('../fonts/icomoon.svg?vx6x8s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-settings:before {
+  content: "\e900";
+}
+.icon-hat:before {
+  content: "\e901";
+}
+.icon-test-tube:before {
+  content: "\e902";
+}
+.icon-bag:before {
+  content: "\e903";
+}
+.icon-chart:before {
+  content: "\e904";
+}
+.icon-home:before {
+  content: "\e905";
+}
+.icon-linkend:before {
+  content: "\e906";
+}
+.icon-twitter:before {
+  content: "\e907";
+}
+.icon-vk:before {
+  content: "\e908";
+}
+.icon-facebook:before {
+  content: "\e909";
+}

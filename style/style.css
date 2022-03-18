@@ -1,26 +1,22 @@
+/*Zeroing*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 :focus, :active {
   outline: none;
 }
-
 a:focus, a:active {
   outline: none;
 }
-
 nav, footer, header, aside {
   display: block;
 }
-
 html, body {
   padding: 0;
   margin: 0;
@@ -32,8 +28,225 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 html {
   overflow-X: hidden;
 }
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  margin: 0;
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+}
+/*Zeroing*/
+
+
+/*CONST*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  position: relative;
+
+  font-weight: 400;
+}
+.main {
+  flex: 1 1 0;
+  margin: 115px 0 0;
+}
+.container {
+  max-width: 1460px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 130px;
+}
+.logo {
+  font-size: 64px;
+}
+/*CONST*/
+
+
+/*FORM*/
+.form {
+  display: flex;
+  flex-direction: column;
+
+  color: #000;
+}
+.registration__form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.form * {
+  margin-top: 20px;
+}
+.form *:first-child {
+  margin-top: 0;
+}
+.form input {
+  height: 40px;
+  padding: 0 10px;
+
+  background: #c4c4c4;
+
+  font-size: 18px;
+}
+.form input::placeholder {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.form__forgotPassword {
+  margin-top: 8px;
+
+  color: #000;
+}
+.form__btn {
+  height: 40px;
+
+  position: relative;
+
+  border-radius: 20px;
+  background: #c4c4c4;
+  
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.form__btn span {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+.social {
+  margin-top: 0;
+}
+.social button {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 7px;
+  background: #c4c4c4;
+}
+button.icon-linkend {
+  font-size: 25px;
+}
+button.icon-twitter {
+  font-size: 25px;
+}
+button.icon-vk {
+  font-size: 21px;
+}
+button.icon-facebook {
+  font-size: 28px;
+}
+.registration__login {
+  color: #000;
+}
+/*FORM*/
+
+
+/*HEADER*/
+header {  
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+.userfull ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userfull a {
+  display: block;
+
+  font-size: 26px;
+  color: #000;
+}
+.userfull__registration {
+  margin-right: 20px;
+}
+.userfull__login {
+  border-radius: 20px;
+  background: #c4c4c4;
+}
+.userfull__login a {
+  padding: 3px 39px;
+}
+/*HEADER*/
+
+
+/*INTRO*/
+.intro__content {
+  max-width: 380px;
+  width: 100%;
+}
+.intro_text {
+  margin-bottom: 37px;
+
+  line-height: 1.17;
+
+  font-size: 36px;
+}
+/*INTRO*/
+
+
+/*REGISTRATION*/
+.registration {
+  text-align: center;
+}
+/*REGISTRATION*/
+
+
+/*FOOTER*/
+footer {
+  min-height: 100px;
+  width: 100%;
+
+  box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+/*FOOTER*/
