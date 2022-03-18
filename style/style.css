@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*Zeroing*/
 
+
 /*CONST*/
 body {
   display: flex;
@@ -76,3 +77,23 @@ body {
   flex: 1 1 0;
 }
 /*CONST*/
+
+
+/*HEADER*/
+header {
+  min-height: 100px;
+  width: 100%;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+/*HEADER*/
+
+
+/*FOOTER*/
+footer {
+  min-height: 100px;
+  width: 100%;
+
+  box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+/*FOOTER*/
