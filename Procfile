@@ -1,0 +1,1 @@
+web: gunicorn bluerabbit.wsgi:application --log-file -
