@@ -62,7 +62,6 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: inherit;
-  font-weight: 400;
 }
 /*Zeroing*/
 
@@ -74,10 +73,12 @@ body {
   min-height: 100%;
 
   position: relative;
+
+  font-weight: 400;
 }
 .main {
   flex: 1 1 0;
-  margin: 100px 0 0;
+  margin: 115px 0 0;
 }
 .container {
   max-width: 1460px;
@@ -86,10 +87,95 @@ body {
   padding: 0 130px;
 }
 .logo {
-  font-weight: 400;
   font-size: 64px;
 }
 /*CONST*/
+
+
+/*FORM*/
+.form {
+  display: flex;
+  flex-direction: column;
+
+  color: #000;
+}
+.registration__form {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.form * {
+  margin-top: 20px;
+}
+.form *:first-child {
+  margin-top: 0;
+}
+.form input {
+  height: 40px;
+  padding: 0 10px;
+
+  background: #c4c4c4;
+
+  font-size: 18px;
+}
+.form input::placeholder {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.form__forgotPassword {
+  margin-top: 8px;
+
+  color: #000;
+}
+.form__btn {
+  height: 40px;
+
+  position: relative;
+
+  border-radius: 20px;
+  background: #c4c4c4;
+  
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.form__btn span {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+.social {
+  margin-top: 0;
+}
+.social button {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 7px;
+  background: #c4c4c4;
+}
+button.icon-linkend {
+  font-size: 25px;
+}
+button.icon-twitter {
+  font-size: 25px;
+}
+button.icon-vk {
+  font-size: 21px;
+}
+button.icon-facebook {
+  font-size: 28px;
+}
+.registration__login {
+  color: #000;
+}
+/*FORM*/
 
 
 /*HEADER*/
@@ -115,23 +201,26 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.userfull__registration {
-  padding: 3px 39px;
+.userfull a {
+  display: block;
 
+  font-size: 26px;
+  color: #000;
+}
+.userfull__registration {
+  margin-right: 20px;
+}
+.userfull__login {
   border-radius: 20px;
   background: #c4c4c4;
-
-  font-weight: 400;
-  font-size: 26px;
+}
+.userfull__login a {
+  padding: 3px 39px;
 }
 /*HEADER*/
 
 
 /*INTRO*/
-.intro {
-  margin-top: 30px;
-}
-.intro__inner {}
 .intro__content {
   max-width: 380px;
   width: 100%;
@@ -141,75 +230,16 @@ header {
 
   line-height: 1.17;
 
-  font-weight: 400;
   font-size: 36px;
 }
-.intro__join {}
-.form {
-  display: flex;
-  flex-direction: column;
-
-  color: #000;
-}
-.form input {
-  height: 40px;
-  padding: 0 10px;
-
-  background: #c4c4c4;
-}
-.form input::placeholder {
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-  color: #000;
-}
-.form__login {
-  margin-bottom: 20px;
-}
-.form__password {
-  margin-bottom: 8px;
-}
-.form__forgotPassword {
-  margin-bottom: 20px;
-
-  color: #000;
-}
-.form__btn {
-  height: 40px;
-  margin-bottom: 20px;
-
-  border-radius: 20px;
-  background: #c4c4c4;
-  
-  font-weight: 400;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.form__socials {}
-.socials {
-  display: flex;
-  justify-content: space-around;
-}
-.social {}
-.social button {
-  width: 40px;
-  height: 40px;
-
-  background: #c4c4c4;
-}
-button.icon-linkend {
-  font-size: 25px;
-}
-button.icon-twitter {
-  font-size: 25px;
-}
-button.icon-vk {
-  font-size: 21px;
-}
-button.icon-facebook {
-  font-size: 28px;
-}
 /*INTRO*/
+
+
+/*REGISTRATION*/
+.registration {
+  text-align: center;
+}
+/*REGISTRATION*/
 
 
 /*FOOTER*/

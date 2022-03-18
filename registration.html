@@ -5,9 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TeamForce</title>
 	<!-- FONTS -->
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<!-- STYLE -->
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/fontsicon-style.css">
 </head>
 <body>
 	<header>
@@ -15,7 +18,7 @@
 			<div class="header__inner">
 				<!-- MENU -->
 				<nav class="menu">
-					<a href="index.html" class="logo">BlueRabbit</a>
+					<a href="index.html" class="logo"><h1>BlueRabbit</h1></a>
 				</nav>
 				<!-- MENU -->
 
@@ -23,8 +26,7 @@
 				<div class="userfull">
 					<ul>
 						<li class="userfull__registration"><a href="registration.html">Присоедениться</a></li>
-						<li class="userfull__login" disabled><a href="login.html">Войти</a></li>
-						<li class="userfull__users"></li>
+						<li class="userfull__login"><a href="index.html">Войти</a></li>
 					</ul>
 				</div>
 				<!-- USERFUll -->
@@ -32,7 +34,36 @@
 		</div>
 	</header>
 
-	<div class="main"></div>
+	<div class="main">
+		<div class="registration">
+			<div class="container">
+				<div class="registration__inner">
+					<div class="intro_text">ДОБЕЙСЯ ПРОФИССИОНАЛЬНОГО УСПЕХА!</div>
+
+					<form action="#" class="registration__form form">
+						<input type="text" placeholder="ФИО" class="form__login">
+
+						<input type="text" placeholder="EMAIL ИЛИ НОМЕР ТЕЛЕФОНА" class="form__login">
+
+						<input type="text" placeholder="ПАРОЛЬ" class="form__password">
+
+						<button class="form__btn">Зарегистрироваться</button>
+
+						<ul class="form__socials socials">
+							<li class="social"><button class="icon-linkend"></button></li>
+							<li class="social"><button class="icon-twitter"></button></li>
+							<li class="social"><button class="icon-vk"></button></li>
+							<li class="social"><button class="icon-facebook"></button></li>
+						</ul>
+
+						<a href="index.html" class="registration__login">ЕСТЬ АККАУНТ? ВОЙТИ</a>
+
+						<button class="form__btn">СОЗДАТЬ АККАУНТ КОМПАНИИ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer>
 		<div class="container">
