@@ -28,3 +28,5 @@ sqlparse==0.4.2
 urllib3==1.26.7
 Wand==0.6.7
 whitenoise==5.3.0
+natasha==1.4.0
+pdfminer==20191125
