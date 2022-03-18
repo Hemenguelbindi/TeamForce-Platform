@@ -9,8 +9,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<!-- STYLE -->
-	<link rel="stylesheet" href="../../style/style.css">
-	<link rel="stylesheet" href="../../style/fontsicon-style.css">
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/fontsicon-style.css">
 </head>
 <body>
 	<header>
@@ -35,34 +35,36 @@
 	</header>
 
 	<div class="main">
-		<div class="registration">
+		<!-- INTRO -->
+		<section class="intro">
 			<div class="container">
-				<div class="registration__inner">
-					<div class="intro_text">ДОБЕЙСЯ ПРОФИССИОНАЛЬНОГО УСПЕХА!</div>
+				<div class="intro__inner">
+					<div class="intro__content">
+						<div class="intro_text">Добро пожаловать<br>в сообщество специалистов!</div>
 
-					<form action="#" class="registration__form form">
-						<input type="text" placeholder="ФИО" class="form__login">
+						<form action="#" class="intro__join form">
+							<input type="text" placeholder="EMAIL ИЛИ НОМЕР ТЕЛЕФОНА" class="form__login">
 
-						<input type="text" placeholder="EMAIL ИЛИ НОМЕР ТЕЛЕФОНА" class="form__login">
+							<input type="text" placeholder="ПАРОЛЬ" class="form__password">
 
-						<input type="text" placeholder="ПАРОЛЬ" class="form__password">
+							<a href="#" class="form__forgotPassword">Забыли пароль?</a>
 
-						<button class="form__btn">Зарегистрироваться</button>
+							<button class="form__btn">ВОЙТИ</button>
 
-						<ul class="form__socials socials">
-							<li class="social"><button class="icon-linkend"></button></li>
-							<li class="social"><button class="icon-twitter"></button></li>
-							<li class="social"><button class="icon-vk"></button></li>
-							<li class="social"><button class="icon-facebook"></button></li>
-						</ul>
+							<a href="registration.html" class="form__btn"><span>ПРИСОЕДЕНИТЬСЯ</span></a>
 
-						<a href="index.html" class="registration__login">ЕСТЬ АККАУНТ? ВОЙТИ</a>
-
-						<button class="form__btn">СОЗДАТЬ АККАУНТ КОМПАНИИ</button>
-					</form>
+							<ul class="form__socials socials">
+								<li class="social"><button class="icon-linkend"></button></li>
+								<li class="social"><button class="icon-twitter"></button></li>
+								<li class="social"><button class="icon-vk"></button></li>
+								<li class="social"><button class="icon-facebook"></button></li>
+							</ul>
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<!-- INTRO -->
 	</div>
 
 	<footer>

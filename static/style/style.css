@@ -88,6 +88,7 @@ body {
 }
 .logo {
   font-size: 64px;
+  color: linear-gradient(#D74A87, #585BE7);
 }
 /*CONST*/
 
