@@ -10,7 +10,7 @@ env = Env()
 env.read_env()
 
 SECRET_KEY = env.str("APP_KEY")
- 
+
 DEBUG = True
 
 ALLOWED_HOSTS = []
