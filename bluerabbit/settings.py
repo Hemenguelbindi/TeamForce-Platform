@@ -13,7 +13,7 @@ SECRET_KEY = env.str("APP_KEY")
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["team-force-platform.herokuapp.com", "127.0.0.1"]
 
 INSTALLED_APPS = [
     'crispy_forms',
@@ -60,8 +60,12 @@ WSGI_APPLICATION = 'bluerabbit.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': env.str("USER_DB"),
+        'PASSWORD': env.str("PASSWORD_DB"),
+        'HOST': env.str("HOST"),
+        'PORT': 5432,
+        'USER': env.str("USER_DB")
     }
 }
 
