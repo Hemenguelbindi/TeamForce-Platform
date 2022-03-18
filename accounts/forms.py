@@ -1,7 +1,8 @@
 from django import forms
-from .models import CustomUser
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.forms import UserChangeForm
+
+from accounts.models import CustomUser
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
@@ -11,10 +12,12 @@ class CustomUserCreationForm(UserCreationForm):
             'info': forms.Textarea(),
         }
 
+
 class CustomUserChangeForm(UserChangeForm):
     def __init__(self, *args, **kwargs):
         super(CustomUserChangeForm, self).__init__(*args, **kwargs)
         self.fields.pop('password')
+        
     class Meta:
         model = CustomUser
         fields = ('first_name', 'last_name', 'gender', 'birth_date', 'info', 'avatar')
@@ -23,8 +26,10 @@ class CustomUserChangeForm(UserChangeForm):
             'info': forms.Textarea(),
         }
 
+
 class Enter_code(forms.Form):
     code = forms.CharField(max_length=6)
+
 
 class LoginForm(forms.Form):
     username = forms.CharField(max_length=30)

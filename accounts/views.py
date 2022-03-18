@@ -11,6 +11,7 @@ from django.conf import settings
 from django.utils.http import urlsafe_base64_encode
 from django.shortcuts import render, redirect
 from django.urls import reverse
+
 from .models import CustomUser
 from random import randint
 from . import forms
@@ -161,6 +162,7 @@ def password_reset_request(request):
     form = PasswordResetForm()
     return render(request, template_name="account/reset_password/password_reset.html",
                 context={"form": form})
+
 
 def logout_view(request):
     logout(request)
